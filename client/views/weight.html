@@ -1,6 +1,7 @@
 <template name="weight">
 	<li class="table-view-cell {{change}}">
-		<span class="pull-right">{{weight}} ({{difference}})</span>
-		<span class="pull-left">{{createdAtFormatted}}</span>
+		<div class="entry-table-left">{{createdAtFormatted}}</div>
+		<div class="entry-table-center">{{weight}} kg</div>
+		<div class="entry-table-right">{{difference}} kg</div>
 	</li>
 </template>

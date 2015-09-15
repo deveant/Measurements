@@ -1,0 +1,28 @@
+.table-view-cell {
+	padding: 11px 15px 11px 15px;
+}
+
+.positive {
+	color: red;
+	background-color: red;
+}
+
+.negative {
+	color: green;
+}
+
+.entry-table-left {
+	float:left;
+	width: 50%;
+}
+
+.entry-table-center {
+	float:left;
+	width: 25%;
+}
+
+.entry-table-right {
+	float:left;
+	width: 25%;
+	text-align: right;
+}
