@@ -3,34 +3,11 @@
 		<form class="new-weight">
 			<input type="number" name="weight" min="0" step="any" placeholder="Add new entry"/>
 		</form>
-		<div class="card">
-			<ul class="table-view">
-				<li class="table-view-divider">Entries</li>
-				{{#each weights}} 
-					{{> weight}} 
-				{{/each}} 
-			</ul>
-		</div>
-    	<div id="calculator">
-			<!-- Screen and clear key -->
-			<div class="top">
-				<span class="clear">C</span>
-				<div class="screen"></div>
-			</div>
-			<div class="keys">
-				<!-- operators and other keys -->
-				<span id="Test">7</span>
-				<span>8</span>
-				<span>9</span>
-				<span>4</span>
-				<span>5</span>
-				<span>6</span>
-				<span>1</span>
-				<span>2</span>
-				<span>3</span>
-				<span>0</span>
-				<span class="double-space">.</span>
-			</div>
-		</div>
+		<ul class="table-view">
+			<li class="table-view-divider">Entries</li>
+			{{#each extendedWeights}} 
+				{{> weight}} 
+			{{/each}} 
+		</ul>
 	</div>
 </template>

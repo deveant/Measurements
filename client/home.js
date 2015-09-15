@@ -3,6 +3,9 @@ Template.home.helpers({
     weights: function () {
       return Weights.find({});
     },
+    extendedWeights: function(){
+      return extendWeights(Weights.find({}).fetch());
+    },
     createdAtFormatted: function () {
       return moment(this.createdAt).format('DD-MM-YYYY');
     }
