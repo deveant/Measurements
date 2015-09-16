@@ -3,6 +3,7 @@
 		<form class="new-weight">
 			<input type="number" name="weight" min="0" step="any" placeholder="Add new entry"/>
 		</form>
+			{{> weightDifference}} 
 		<ul class="table-view">
 			<li class="table-view-divider">Entries</li>
 			{{#each extendedWeights}} 

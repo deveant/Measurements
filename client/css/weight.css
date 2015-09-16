@@ -4,7 +4,6 @@
 
 .positive {
 	color: red;
-	background-color: red;
 }
 
 .negative {
@@ -25,4 +24,27 @@
 	float:left;
 	width: 25%;
 	text-align: right;
+}
+
+#weightDifference {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+/* We target the top of the order list and remove the list properties. */
+ #difference li {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    width: 10%;
+    vertical-align: center;
+}
+
+ #difference ol {
+ 	vertical-align: center;
+ }
+/* We target the li items with and without a hyper link and color the font white. */
+#difference li, #difference li a {
+    text-decoration: none;
+	color: #000;
 }
