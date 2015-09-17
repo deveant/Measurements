@@ -1,3 +1,48 @@
+.bar-nav {
+	position: relative;
+}
+.content {
+	padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.content.menu-open {
+	padding-left: 100%;
+}
+
+.sidebar {
+    z-index: 1000;
+    position: fixed;
+    left: 100%;
+    width: 0%;
+    height: 100%;
+    margin-left: -100%;
+    overflow-y: auto;
+    background: #EFEFF4;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.content.menu-open .sidebar {
+	width: 100%;
+}
+
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+}
+
+.content.menu-open #page-content-wrapper {
+    position: absolute;
+    margin-right: -25px;
+}
+
 .table-view-cell {
 	padding: 11px 15px 11px 15px;
 }
@@ -29,19 +74,26 @@
 #weightDifference {
     width: 100%;
     margin: auto;
-    text-align: center;
 }
 /* We target the top of the order list and remove the list properties. */
  #difference li {
     display: inline-block;
     list-style: none;
     text-align: center;
-    width: 10%;
+    width: 32%;
+    max-width: 33%;
+    overflow: hidden;
     vertical-align: center;
 }
+ #difference li .subtitle {
+	font-size: .5em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
 
- #difference ol {
+ #difference {
  	vertical-align: center;
+ 	padding: 0 5%;
  }
 /* We target the li items with and without a hyper link and color the font white. */
 #difference li, #difference li a {

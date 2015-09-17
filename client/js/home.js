@@ -1,11 +1,12 @@
 Meteor.subscribe("weights");
+
 Template.home.helpers({
     weights: function () {
       return Weights.find({});
     },
     extendedWeights: function(){
       return extendWeights(Weights.find({}).fetch());
-    }
+    },
 });
 
 Template.home.events({
@@ -15,8 +16,4 @@ Template.home.events({
      	Meteor.call("addWeight", weight);
      	event.target.weight.value = "";
     },
-    "click #Test": function(event) {
-    	event.preventDefault();
-    	console.log("test");
-    }
 });
