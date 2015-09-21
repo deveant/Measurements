@@ -18,5 +18,9 @@ Template.sidebar.events({
 	'click .icon-weight': function() {
 		event.preventDefault();
     	Session.set(MENU_KEY, ! Session.get(MENU_KEY));
-	}
+	},
+	'click .icon-logout': function() {
+		event.preventDefault();
+    	Meteor.logout();
+	},
 });

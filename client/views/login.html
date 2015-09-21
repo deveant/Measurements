@@ -1,0 +1,32 @@
+<template name="login">
+<div class="wrapper-login">
+	<div class="content-login">
+		<div class="card">
+			<h1>MeasureUp!</h1>
+			<h2>Please Login</h2>
+			<form>
+		        <input type="email" class="{{userNotFound}}" name="loginEmail" placeholder="Email Address">
+		        <input type="password" class="{{incorrectPassword}}" name="loginPassword" placeholder="Password">
+		        <input type="submit" value="Login">
+		    </form>
+		    <a href="#" name="icon-register" class="register">New? Register</a>
+	    </div>
+	</div>
+</div>
+</template>
+
+<template name="register">
+	<div class="wrapper-login">
+		<div class="content-login">
+			<div class="card">
+				<h1>MeasureUp!</h1>
+				<h2>Register</h2>
+				<form>
+		        	<input type="email" name="loginEmail" placeholder="Email Address">
+		        	<input type="password" name="loginPassword" placeholder="Password">
+		        	<input type="submit" value="Register">
+		    	</form>
+			</div>
+		</div>
+	</div>
+</template>

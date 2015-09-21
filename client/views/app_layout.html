@@ -4,7 +4,7 @@
 		<meta name="apple-mobile-web-app-capable" content="yes">
     	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	</head>
-
+	{{#if currentUser}}
 	<div class="content {{menuOpen}}">
 		{{> sidebar}}
 		<div id="page-content-wrapper">
@@ -15,4 +15,7 @@
 			{{> yield "footer"}}
 		</div>
 	</div>
+	{{else}}
+		{{> login}}
+	{{/if}}
 </template>

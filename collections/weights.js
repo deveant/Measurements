@@ -4,7 +4,8 @@ Meteor.methods({
 	addWeight: function (weight) {
 	    Weights.insert({
 	      weight: weight,
-	      createdAt: new Date()
+	      createdAt: new Date(),
+	      owner: Meteor.userId()
 	    });
 	  },
 });

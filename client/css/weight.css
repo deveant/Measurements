@@ -9,6 +9,52 @@
     transition: all 0.5s ease;
 }
 
+.content-login {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 480px;
+}
+
+.wrapper-login {
+    height: 100%;
+    background: rgba(11,55,96,1);
+    background: -moz-linear-gradient(left, rgba(11,55,96,1) 0%, rgba(10,43,82,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(11,55,96,1)), color-stop(100%, rgba(10,43,82,1)));
+    background: -webkit-linear-gradient(left, rgba(11,55,96,1) 0%, rgba(10,43,82,1) 100%);
+    background: -o-linear-gradient(left, rgba(11,55,96,1) 0%, rgba(10,43,82,1) 100%);
+    background: -ms-linear-gradient(left, rgba(11,55,96,1) 0%, rgba(10,43,82,1) 100%);
+    background: linear-gradient(to right, rgba(11,55,96,1) 0%, rgba(10,43,82,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b3760', endColorstr='#0a2b52', GradientType=1 );
+}
+
+.content-login .card {
+    background: transparent;
+    border-style: none;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.content-login .card .loginwarning {
+    border-color: red;
+    color: red;
+    border-width: 3px;
+}
+
+.content-login .card h1, .content-login .card h2 {
+    color: white;
+}
+
+.content-login .card h2 {
+    font-size: 1em;
+}
+
+.content-login .card a {
+    padding-top: 5px;
+    color: white;
+    text-decoration: none;
+    float: right;
+}
 .content.menu-open {
 	padding-left: 100%;
 }
